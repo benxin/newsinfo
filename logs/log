@@ -1,0 +1,21 @@
+2019-09-02 22:06:21,681 - INFO - _internal.py - _log - 122 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-02 22:06:21,681 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-02 22:06:21,992 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-02 22:06:21,992 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-02 22:07:19,736 - INFO - _internal.py - _log - 122 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-02 22:07:19,737 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-02 22:07:20,050 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-02 22:07:20,051 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-02 22:13:05,020 - INFO - _internal.py - _log - 122 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-02 22:13:05,020 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-02 22:13:05,357 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-02 22:13:05,358 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-02 22:19:47,309 - INFO - _internal.py - _log - 122 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-02 22:19:47,310 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-02 22:19:47,679 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-02 22:19:47,680 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-02 22:19:52,679 - DEBUG - views.py - index - 6 - debug
+2019-09-02 22:19:52,680 - INFO - views.py - index - 7 - info
+2019-09-02 22:19:52,680 - WARNING - views.py - index - 8 - warning
+2019-09-02 22:19:52,680 - ERROR - views.py - index - 9 - error
+2019-09-02 22:19:52,682 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [02/Sep/2019 22:19:52] "GET / HTTP/1.1" 200 -
