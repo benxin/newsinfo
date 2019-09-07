@@ -9,7 +9,7 @@ from flask_wtf.csrf import CSRFProtect
 from redis import Redis
 
 from config import config, Config
-
+from flask_wtf.csrf import generate_csrf
 
 def setup_log(config_name):
 
@@ -38,6 +38,7 @@ def create_app(config_name):
     app = Flask(__name__)
     app.config.from_object(config[config_name])
 
+
     # db = SQLAlchemy(app)
     db.init_app(app)
 
@@ -45,14 +46,23 @@ def create_app(config_name):
     Migrate(app, db)
     manager.add_command('db', MigrateCommand)
 
-    # conn = Redis(host='localhost', port=6379, db=0)
-    redis_conn = Redis(host=Config.REDIS_HOST, port=Config.REDIS_HOST, charset="utf-8", decode_responses=True)
-    Session(app)
+
     # 开启CSRF保护
     CSRFProtect(app)
+    Session(app)
+
+    @app.after_request
+    def after_request(response):
+        csrf_token = generate_csrf()
+        response.set_cookie('csrf_token',csrf_token)
+        return response
+
 
     # 注册index蓝本
     from info.index import index_blue
-
     app.register_blueprint(index_blue)
+
+    # 注册登录蓝本
+    from info.passport import passport_blue
+    app.register_blueprint(passport_blue)
     return app
