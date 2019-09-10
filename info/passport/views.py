@@ -12,6 +12,20 @@ from info import constants
 from info import db
 
 
+# 登出
+@passport_blue.route('/logout', methods=['GET', 'POST'])
+def logout():
+    # 删除session数据
+    session.pop('user_id',None)
+    session.pop('nick_name',None)
+    session.pop('mobile',None)
+    return jsonify(errno = RET.OK,errmsg = '退出成功')
+
+
+
+
+
+
 # 登录
 
 @passport_blue.route('/login', methods=['GET', 'POST'])
@@ -31,6 +45,7 @@ def login():
         return jsonify(errno=RET.DBERR, errmsg='数据库查询出错')
 
     if not user:
+
         return jsonify(errno = RET.USERERR, errmsg='用户不存在')
 
     if not user.check_password(password):

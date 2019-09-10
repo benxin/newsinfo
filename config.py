@@ -9,6 +9,7 @@ DB_NAME = os.getenv('dbname')
 
 class Config(object):
     DEBUG = True
+
     DB_NAME = os.getenv('dbname')
 
     DB_PWD = os.getenv('dbpwd')
