@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccab6c1c-81d1-4a7b-ae01-956784cbcf2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/info/news/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/news/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/templates/news/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/utils/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/index/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/passport/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/passport/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/html/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/html/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/js/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/js/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/news/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +227,7 @@
       <workItem from="1567858072016" duration="15769000" />
       <workItem from="1567933027289" duration="5449000" />
       <workItem from="1567938511916" duration="2729000" />
-      <workItem from="1567943500714" duration="32979000" />
+      <workItem from="1567943500714" duration="33507000" />
     </task>
     <servers />
   </component>
