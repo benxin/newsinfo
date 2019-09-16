@@ -11,6 +11,8 @@ from . import profile_blue
 @profile_blue.route('/news_release', methods=['GET', 'POST'])
 @user_login_data
 def news_release():
+
+    user = g.user
     if request.method == 'GET':
 
         categories = []
@@ -57,7 +59,36 @@ def news_release():
 
     # 将标题图片上传至七牛云
     news = News()
-    
+    try:
+        key = storage(index_image)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.THIRDERR,errmsg='上传图片出错')
+
+
+    # 初始化新闻模型,并设置数据
+    news = News()
+    news.title = title
+    news.digest = digest
+    news.source = source
+    news.content = content
+    news.index_image_url = constants.QINIU_DOMIN_PREFIX + key
+    news.user_id = category_id
+    news.user_id = user.id
+    # 审核状态 1代表等待审核
+    news.status = 1
+
+    # 保存到数据库
+    try:
+        db.session.add(news)
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        return jsonify(errno = RET.DBERR,errmsg='数据储存失败')
+    # 返回结果
+    return jsonify(errno=RET.OK,errmsg='发表成功,待审核')
+
 
 
 

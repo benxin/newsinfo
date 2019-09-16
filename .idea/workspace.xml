@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccab6c1c-81d1-4a7b-ae01-956784cbcf2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/info/user/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/utils/image_storage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/news/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/passport/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/passport/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/html/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/html/user_base_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/user_base_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/html/user_collection.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/user_collection.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/html/user_news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/html/user_news_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/html/user_news_release.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/user_news_release.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/html/user_pass_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/user_pass_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/html/user_pic_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/user_pic_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/js/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/js/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/js/user_base_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/js/user_base_info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/js/user_pass_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/js/user_pass_info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/news/js/user_pic_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/news/js/user_pic_info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/templates/news/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/news/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/user/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/user/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/user/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/manager.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -251,7 +232,7 @@
       <workItem from="1567938511916" duration="2729000" />
       <workItem from="1567943500714" duration="39800000" />
       <workItem from="1568250888267" duration="2042000" />
-      <workItem from="1568252952569" duration="56990000" />
+      <workItem from="1568252952569" duration="58262000" />
     </task>
     <servers />
   </component>
