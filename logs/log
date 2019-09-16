@@ -5543,3 +5543,5 @@
 2019-09-17 04:20:39,048 - INFO - _internal.py - _log - 122 -  * Restarting with stat
 2019-09-17 04:20:39,606 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
 2019-09-17 04:20:39,607 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-17 04:28:51,623 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/index/views.py', reloading
+2019-09-17 04:28:51,750 - INFO - _internal.py - _log - 122 -  * Restarting with stat

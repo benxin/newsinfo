@@ -39,6 +39,13 @@ def news_list():
     for item in items:
         news_list.append(item.to_dict())
 
+    # 查询数据并分页
+    filters = [News.status ==0]
+    # 如何分页不为0,那么就添加分类id 的过滤
+    if cid != '0':
+        filters.append(News.category_id == cid)
+
+
     data = {
         'current_page': current_page,
         'total_page': total_page,
