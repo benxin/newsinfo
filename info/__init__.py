@@ -2,7 +2,7 @@ from logging.handlers import RotatingFileHandler
 import logging
 from flask import Flask, g, render_template
 from flask_migrate import Migrate, MigrateCommand
-from flask_script import Manager
+from flask_script import Manager, Server
 from flask_session import Session
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf.csrf import CSRFProtect
@@ -42,7 +42,11 @@ def create_app(config_name):
 
     manager = Manager(app)
     Migrate(app, db)
+
     manager.add_command('db', MigrateCommand)
+    # manager.add_command("runserver", Server(host="0.0.0.0",
+    #                                         port="5000",
+    #                                         ssl_crt='localhost.pem', ssl_key='localhost-key.pem'))
 
     # 开启CSRF保护
     CSRFProtect(app)
@@ -83,5 +87,9 @@ def create_app(config_name):
     # 注册新闻蓝本
     from info.news import news_blue
     app.register_blueprint(news_blue)
+
+    # 注册新闻蓝本
+    from info.user import profile_blue
+    app.register_blueprint(profile_blue)
 
     return app

@@ -117,8 +117,8 @@ def sms_code():
     if not all([mobile, image_code, image_code_id]):
         return jsonify(errno=RET.PARAMERR, errmsg="请输入参数")
 
-    if not re.match('1[3456789]\d{9}', mobile):
-        return jsonify(errno=RET.PARAMERR, errmsg="手机号码无效")
+    if not re.match(r'^1[3456789]\d{9}$', mobile):
+        return jsonify(errno=RET.PARAMERR, errmsg="手机号码不合法")
 
     real_image_code = Config.redis_db.get("image_code_" + image_code_id)
 

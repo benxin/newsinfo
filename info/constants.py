@@ -7,8 +7,8 @@ IMAGE_CODE_REDIS_EXPIRES = timedelta(minutes=1)
 # 短信验证码Redis有效期，单位：分钟
 SMS_CODE_REDIS_EXPIRES = timedelta(minutes=1)
 
-# 七牛空间域名
-QINIU_DOMIN_PREFIX = "http://oyucyko3w.bkt.clouddn.com/"
+# 七牛空间域名 pxu58aa0y.bkt.clouddn.com
+QINIU_DOMIN_PREFIX = "http://pxu58aa0y.bkt.clouddn.com/"
 
 # 七牛access_key
 access_key = "yV4GmNBLOgQK-1Sn3o4jktGLFdFSrlywR2C-hvsW"

@@ -9,7 +9,7 @@ DB_NAME = os.getenv('dbname')
 
 class Config(object):
     DEBUG = True
-
+    # ssl_context = ('localhost.pem', 'localhost-key.pem')
     DB_NAME = os.getenv('dbname')
 
     DB_PWD = os.getenv('dbpwd')
