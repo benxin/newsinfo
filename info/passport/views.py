@@ -12,18 +12,32 @@ from info import constants
 from info import db
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 登出
-@passport_blue.route('/logout', methods=['GET', 'POST'])
+@passport_blue.route('/logout')
 def logout():
-    # 删除session数据
-    session.pop('user_id',None)
-    session.pop('nick_name',None)
-    session.pop('mobile',None)
-    return jsonify(errno = RET.OK,errmsg = '退出成功')
+    '''
+     清除session中的对应登录之后保存的信息
+    :return:
+    '''
+    session.pop('user_id', None)
+    session.pop('nick_name', None)
+    session.pop('mobile', None)
+    session.pop('is_admin', None)
 
-
-
-
+    return jsonify(errno=RET.OK, errmsg='ok')
 
 
 # 登录
@@ -45,8 +59,7 @@ def login():
         return jsonify(errno=RET.DBERR, errmsg='数据库查询出错')
 
     if not user:
-
-        return jsonify(errno = RET.USERERR, errmsg='用户不存在')
+        return jsonify(errno=RET.USERERR, errmsg='用户不存在')
 
     if not user.check_password(password):
         return jsonify(errno=RET.PWDERR, errmsg='密码错误')
@@ -56,18 +69,13 @@ def login():
     # 提交数据到数据库
     db.session.commit()
 
-
     # 用户状态保持
 
     session["mobile"] = user.mobile
     session["user_id"] = user.id
     session["nick_name"] = user.nick_name
 
-    return jsonify(errno= RET.OK, errmsg='登录成功')
-
-
-
-
+    return jsonify(errno=RET.OK, errmsg='登录成功')
 
 
 # 注册
@@ -78,8 +86,8 @@ def register():
     smscode = request.json.get("smscode")
     password = request.json.get("password")
 
-    if not all([mobile,smscode,password]):
-        return jsonify(errno = RET.PARAMERR,errmsg = '参数错误')
+    if not all([mobile, smscode, password]):
+        return jsonify(errno=RET.PARAMERR, errmsg='参数错误')
 
     real_sms_code = Config.redis_db.get("sms_code_" + mobile)
 
@@ -104,8 +112,7 @@ def register():
     return jsonify(errno=RET.OK, errmsg='注册成功')
 
 
-
- # 发送短信验证码
+# 发送短信验证码
 @passport_blue.route("/sms_code", methods=["GET", "POST"])
 def sms_code():
     # 获取前端传递的mobile ,imaget_code,imaget_code_id参数
@@ -150,10 +157,7 @@ def sms_code():
 
     Config.redis_db.set("sms_code_" + mobile, random_sms_code, constants.SMS_CODE_REDIS_EXPIRES)
 
-
     return jsonify(errno=RET.OK, errmsg='短信验证码发送成功')
-
-
 
 
 @passport_blue.route("/image_code")
@@ -164,7 +168,6 @@ def image_code():
     # image 图片
     # 生成图片验证码
     name, text, image = captcha.generate_captcha()
-
 
     print("验证码：" + text)
 

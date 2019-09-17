@@ -88,8 +88,12 @@ def create_app(config_name):
     from info.news import news_blue
     app.register_blueprint(news_blue)
 
-    # 注册新闻蓝本
+    # 注册用户蓝本
     from info.user import profile_blue
     app.register_blueprint(profile_blue)
+
+    # 注册管理员蓝本
+    from info.admin import admin_blue
+    app.register_blueprint(admin_blue)
 
     return app

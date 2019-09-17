@@ -23,12 +23,14 @@ def news_list():
         page = 1
         per_page = 10
 
-    filter = []
+    # 查询数据并分页
+    # 如果分页不为0,那么就添加分类id 的过滤
+    filters = [News.status == 0]
 
     if cid != 1:
-        filter.append(News.category_id == cid)
+        filters.append(News.category_id == cid)
 
-    paginate = News.query.filter(*filter).order_by(News.create_time.desc()).paginate(page, per_page, False)
+    paginate = News.query.filter(*filters).order_by(News.create_time.desc()).paginate(page, per_page, False)
 
     items = paginate.items
     # 总页数
@@ -39,12 +41,6 @@ def news_list():
     news_list = []
     for item in items:
         news_list.append(item.to_basic_dict())
-
-    # 查询数据并分页
-    filters = [News.status == 0]
-    # 如何分页不为0,那么就添加分类id 的过滤
-    if cid != '0':
-        filters.append(News.category_id == cid)
 
     data = {
         'current_page': current_page,
@@ -59,7 +55,6 @@ def news_list():
 @user_login_data
 def index():
     user = g.user
-
 
     # 热门新闻
 
