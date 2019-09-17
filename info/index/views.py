@@ -1,5 +1,6 @@
 from flask import render_template, current_app, session, request, jsonify, g
 
+from info import constants
 from info.models import User, News, Category
 from info.utils.common import user_login_data
 from info.utils.response_code import RET
@@ -11,7 +12,7 @@ def news_list():
     # 新闻列表
     cid = request.args.get('cid', "1")
     page = request.args.get('page', "1")
-    per_page = request.args.get('per_page', "10")
+    per_page = request.args.get('per_page', constants.HOME_PAGE_MAX_NEWS)
 
     try:
         page = int(page)
@@ -37,14 +38,13 @@ def news_list():
 
     news_list = []
     for item in items:
-        news_list.append(item.to_dict())
+        news_list.append(item.to_basic_dict())
 
     # 查询数据并分页
-    filters = [News.status ==0]
+    filters = [News.status == 0]
     # 如何分页不为0,那么就添加分类id 的过滤
     if cid != '0':
         filters.append(News.category_id == cid)
-
 
     data = {
         'current_page': current_page,
@@ -60,12 +60,6 @@ def news_list():
 def index():
     user = g.user
 
-    # 登录
-    # user_id = session.get("user_id")
-    # user = None
-    #
-    # if user_id:
-    #     user = User.query.get(user_id)
 
     # 热门新闻
 
@@ -83,7 +77,7 @@ def index():
         category_list.append(category.to_dict())
 
     data = {
-        'user_info': g.user.to_dict() if g.user else None,
+        'user_info': user.to_dict() if user else None,
         "click_news_list": news_list,
         "categories": category_list
 

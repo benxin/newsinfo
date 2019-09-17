@@ -9,7 +9,7 @@ $(function () {
     $(".release_form").submit(function (e) {
         e.preventDefault()
 
-        // 发布新闻
+        // TODO 发布完毕之后需要选中我的发布新闻
         $(this).ajaxSubmit({
             beforeSubmit: function (request) {
                 // 在提交之前，对参数进行处理

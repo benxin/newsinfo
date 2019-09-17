@@ -164,8 +164,9 @@ def news_detail(news_id):
         current_app.logger.error(e)
 
     click_news_list = []
+
     for news in news_list if news_list else []:
-        click_news_list.append(news.to_basic_dict())
+        click_news_list.append(news.to_dict())
 
     # 新闻详情
     try:
@@ -173,6 +174,13 @@ def news_detail(news_id):
     except Exception as e:
         current_app.logger.error(e)
         abort(404)
+    # 新闻收藏
+    # 判断用户是否收藏过新闻
+    is_collected = False
+
+    if user:
+        if news in user.collection_news:
+            is_collected = True
 
     if not news:
         # 返回数据未找到的页面
@@ -211,13 +219,10 @@ def news_detail(news_id):
             comment_dict['is_like'] = True
         comment_list.append(comment_dict)
 
-    # 新闻收藏
-    # 判断用户是否收藏过新闻
-    is_collected = False
-    if user:
-        if news in g.user.collection_news:
-            is_collected = True
+
+
     # 当前用户是否关注当前新闻作者
+
     is_followed = False
 
 
@@ -226,10 +231,11 @@ def news_detail(news_id):
     #         is_followed = True
 
     data = {
-        "news": news.to_dict(),
-        "is_collected": is_collected,
+
+        "user_info": user.to_dict() if user else None,
         "click_news_list": click_news_list,
-        "user_info": g.user.to_dict() if g.user else None,
+        "news": news,
+        "is_collected": is_collected,
         'comments': comment_list,
         # 'is_followed': is_followed,
     }

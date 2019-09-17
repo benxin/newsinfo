@@ -8,54 +8,105 @@ from info.utils.response_code import RET
 from . import profile_blue
 
 
+@profile_blue.route('/news_list')
+@user_login_data
+def news_list():
+    # 获取页数
+    user = g.user
+    p = request.args.get('p', 1)
+
+    try:
+        p = int(p)
+    except Exception as e:
+        current_app.logger.error(e)
+        p = 1
+
+    news_li = []
+    current_page = 1
+    total_page = 1
+    try:
+        paginate = News.query.filter(News.user_id == user.id).paginate(p, constants.USER_COLLECTION_MAX_NEWS, False)
+
+        # 获取当前页数据
+        news_li = paginate.items
+        current_page = paginate.page
+        total_page = paginate.pages
+    except Exception as e:
+        current_app.logger.error(e)
+
+    news_dict_li = []
+
+    for news_item in news_li:
+        news_dict_li.append(news_item.to_review_dict())
+    data = {
+        'news_list': news_dict_li,
+        'total_page': total_page,
+        'current_page': current_page,
+
+    }
+
+    return render_template('news/user_news_list.html', data=data)
+
+
 @profile_blue.route('/news_release', methods=['GET', 'POST'])
 @user_login_data
 def news_release():
-
     user = g.user
+
     if request.method == 'GET':
 
         categories = []
+
         try:
 
             # 获取所有的分类数据
             categories = Category.query.all()
         except Exception as e:
             current_app.logger.error(e)
+
         # 定义列表保存分类数据
-        categories_dist = []
+        categories_dicts = []
 
         for category in categories:
             # 获取字典
             cate_dict = category.to_dict()
-            categories_dist.append(cate_dict)
+            # 拼接内容
+            categories_dicts.append(cate_dict)
         # 移除最新分类
 
-        categories_dist.pop(0)
+        categories_dicts.pop(0)
+
         data = {
-            'categories': categories_dist,
+            'categories': categories_dicts,
         }
 
         return render_template('news/user_news_release.html', data=data)
 
     # post提交执行新闻数据发布
     # 获取提交数据字段
+
     title = request.form.get('title')
+    print('title', title)
     source = '个人发布'
     digest = request.form.get('digest')
+    print('digest', digest)
     content = request.form.get('content')
+    print('content', content)
     index_image = request.files.get('index_image')
+    print('index_image', index_image)
     category_id = request.form.get('category_id')
+    print('category_id', category_id)
+
     # 校验数据是否有值
-    if not all([title,source,digest,content,index_image,category_id]):
-        return jsonify(errno=RET.PARAMERR,errmsg='参数有误')
+    if not all([title, source, digest, content, index_image, category_id]):
+        return jsonify(errno=RET.PARAMERR, errmsg='参数有误1')
 
     # 尝试读取图片
     try:
         index_image = index_image.read()
     except Exception as e:
         current_app.logger.error(e)
-        return jsonify(errno=RET.PARAMERR,errmsg='参数有误')
+        return jsonify(errno=RET.PARAMERR, errmsg='参数有误2')
 
     # 将标题图片上传至七牛云
     news = News()
@@ -63,8 +114,7 @@ def news_release():
         key = storage(index_image)
     except Exception as e:
         current_app.logger.error(e)
-        return jsonify(errno=RET.THIRDERR,errmsg='上传图片出错')
-
+        return jsonify(errno=RET.THIRDERR, errmsg='上传图片出错')
 
     # 初始化新闻模型,并设置数据
     news = News()
@@ -85,12 +135,9 @@ def news_release():
     except Exception as e:
         current_app.logger.error(e)
         db.session.rollback()
-        return jsonify(errno = RET.DBERR,errmsg='数据储存失败')
+        return jsonify(errno=RET.DBERR, errmsg='数据储存失败')
     # 返回结果
-    return jsonify(errno=RET.OK,errmsg='发表成功,待审核')
-
-
-
+    return jsonify(errno=RET.OK, errmsg='发表成功,待审核')
 
 
 @profile_blue.route('/collection')
