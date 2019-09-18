@@ -6,8 +6,8 @@ from . import views
 
 
 @admin_blue.before_request
-def before_reques():
-    if not request.url.endswith(url_for("admin/admin_login")):
+def before_request():
+    if not request.url.endswith(url_for("admin.admin_login")):
         user_id = session.get('user_id')
         is_admin = session.get('is_admin', False)
 

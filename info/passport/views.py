@@ -12,21 +12,8 @@ from info import constants
 from info import db
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 登出
-@passport_blue.route('/logout')
+@passport_blue.route('/logout', methods=['POST'])
 def logout():
     '''
      清除session中的对应登录之后保存的信息

@@ -8,7 +8,7 @@ from info.utils.common import user_login_data
 @admin_blue.route('/index')
 @user_login_data
 def admin_index():
-    '''管理员主页'''
+    '''admin 主页'''
 
     user = g.user
 
@@ -23,17 +23,17 @@ def admin_index():
 
 
 @admin_blue.route('/login', methods=['GET', 'POST'])
+@user_login_data
 def admin_login():
-    user = g.user
+
     if request.method == 'GET':
 
-        user_id = session.get('user_id',None)
-        is_admin = session.get('is_admin',False)
+        user_id = session.get('user_id', None)
+        is_admin = session.get('is_admin', False)
 
         if user_id and is_admin:
             return redirect(url_for('admin.admin_index'))
         return render_template('admin/login.html')
-
 
     # 获取登录参数
     username = request.form.get('username')

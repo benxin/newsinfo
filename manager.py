@@ -36,7 +36,6 @@ def createsuperuser(name, password):
         db.session.commit()
     except Exception as e:
         current_app.logger.error(e)
-        print(e)
         db.session.rollback()
 
 
