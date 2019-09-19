@@ -13,7 +13,7 @@ from info import db
 
 
 # 登出
-@passport_blue.route('/logout', methods=['POST'])
+@passport_blue.route('/logout', methods=['POST','GET'])
 def logout():
     '''
      清除session中的对应登录之后保存的信息
