@@ -11,6 +11,8 @@ from redis import Redis
 from config import config, Config
 from flask_wtf.csrf import generate_csrf
 
+from info.utils.response_code import RET
+
 
 def setup_log(config_name):
     # 设置日志记录等级
@@ -65,7 +67,6 @@ def create_app(config_name):
     @app.errorhandler(404)
     @user_login_data
     def err0r_404_handler(error):
-
         user = g.user
 
         data = {
@@ -74,7 +75,7 @@ def create_app(config_name):
 
         }
 
-        return render_template('news/404.html', data= data)
+        return render_template('news/404.html', data=data), 404
 
     # 注册首页蓝本
     from info.index import index_blue

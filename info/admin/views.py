@@ -9,47 +9,47 @@ from . import admin_blue
 from info.utils.common import user_login_data
 
 
-# @admin_blue.route('/user_list')
-# def user_list():
-#     '''获取用户列表'''
-#     page = request.values.get('p', 1)
-#     # page = request.args.get('p',1)
-#
-#     try:
-#         page = int(page)
-#     except Exception as e:
-#         current_app.logger.error(e)
-#         page = 1
-#
-#     user = []
-#     current_page = 1
-#     total_page = 1
-#
-#     # 查询数据
-#     try:
-#         paginate = User.query.filter(User.is_admin == False).order_by(User.last_login.desc).paginate(page,
-#                                                                                                      constants.ADMIN_NEWS_PAGE_MAX_COUNT,
-#                                                                                                      False)
-#         users = paginate.items
-#         current_page = paginate.page
-#         total_page = paginate.page
-#     except Exception as e:
-#         current_app.logger.error(e)
-#
-#     # 将模型列表转换成字典列表
-#
-#     users_list = []
-#
-#     for user in users:
-#         user_list.append(user.to_admin_dict())
-#
-#     context = {
-#         'total_page': total_page,
-#         'current_page': current_page,
-#         'users': users_list
-#     }
-#
-#     return render_template('admin/user_count.html', context=context)
+@admin_blue.route('/user_list')
+def user_list():
+    '''获取用户列表'''
+    # page = request.values.get('p', 1)
+    page = request.args.get('p', 1)
+
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        page = 1
+
+    users = []
+    current_page = 1
+    total_page = 1
+
+    # 查询数据
+    try:
+        paginate = User.query.filter(User.is_admin == False).order_by(User.last_login.desc()).paginate(page,
+                                                                                                       constants.ADMIN_USER_PAGE_MAX_COUNT,
+                                                                                                       False)
+        users = paginate.items
+        current_page = paginate.page
+        total_page = paginate.pages
+    except Exception as e:
+        current_app.logger.error(e)
+
+    # 将模型列表转换成字典列表
+
+    users_list = []
+
+    for user in users:
+        users_list.append(user.to_admin_dict())
+
+    data = {
+        'total_page': total_page,
+        'current_page': current_page,
+        'users': users_list
+    }
+
+    return render_template('admin/user_list.html', data=data)
 
 
 @admin_blue.route('/user_count')
@@ -97,8 +97,8 @@ def user_count():
         active_date.append(begin_date.strftime('%Y-%m-%d'))
         count = 0
         try:
-            count = User.query.filter(User.is_admin == False, User.create_time >= day_begin,
-                                      User.create_time < end_day).count()
+            count = User.query.filter(User.is_admin == False, User.last_login >= day_begin,
+                                      User.last_login < end_day).count()
 
         except Exception as e:
             current_app.logger.error(e)
@@ -116,25 +116,6 @@ def user_count():
 
     }
     return render_template('admin/user_count.html', data=data)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @admin_blue.route('/index')
