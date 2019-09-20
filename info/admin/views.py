@@ -4,9 +4,56 @@ import time
 from flask import render_template, request, current_app, session, g, redirect, url_for
 
 from info import constants
-from info.models import User
+from info.models import User, News
 from . import admin_blue
 from info.utils.common import user_login_data
+
+
+@admin_blue.route('/news_review_detail')
+def news_review_detail():
+    '''新闻审核'''
+
+
+@admin_blue.route('/news_review')
+def news_review():
+    '''待审核新闻列表'''
+    page = request.args.get('p', 1)
+    keywords = request.values.get('keywords', '')
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        page = 1
+
+    news_list = []
+    current_page = 1
+    total_page = 1
+
+    try:
+        filters = [News.status != 0]
+        if keywords:
+            filters.append(News.title.contains(keywords))
+
+        # 查询
+
+        paginate = News.query.filter(*filters).order_by(News.create_time.desc()).paginate(page,
+                                                                                          constants.ADMIN_NEWS_PAGE_MAX_COUNT,
+                                                                                          False)
+        news_list = paginate.items
+        current_page = paginate.pages
+    except Exception as e:
+        current_app.logger.error(e)
+
+    news_dict_list = []
+    for news in news_list:
+        news_dict_list.append(news.to_review_dict())
+
+    context = {
+        'total_page': total_page,
+        'current_page': current_page,
+        'news_list': news_dict_list
+    }
+    return render_template('admin/news_review.html', data=context)
 
 
 @admin_blue.route('/user_list')
@@ -76,6 +123,7 @@ def user_count():
     today = date.today()
 
     try:
+
         day_begin = today.isoformat()
         day_begin_date = datetime.strptime(day_begin, '%Y-%m-%d')
         day_count = User.query.filter(User.is_admin == False, User.create_time > day_begin_date).count()
@@ -97,8 +145,8 @@ def user_count():
         active_date.append(begin_date.strftime('%Y-%m-%d'))
         count = 0
         try:
-            count = User.query.filter(User.is_admin == False, User.last_login >= day_begin,
-                                      User.last_login < end_day).count()
+            count = User.query.filter(User.is_admin == False, User.create_time >= begin_date,
+                                      User.create_time < end_day).count()
 
         except Exception as e:
             current_app.logger.error(e)
