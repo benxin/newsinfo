@@ -7,6 +7,27 @@ from info.utils.response_code import RET
 from . import news_blue
 
 
+@news_blue.route('/followed_user', methods=['GET', 'POST'])
+@user_login_data
+def followed_user():
+    user = g.user
+    user_id = request.json.get('user_id')
+    action = request.json.get('action')
+    news_user = User.query.get(user_id)
+    if action == 'follow':
+        if news_user not in user.followed:
+            user.followed.append(news_user)
+        else:
+            return jsonify(errno=RET.PARAMERR, errmsg='已经关注,请勿重复操作')
+    else:
+        if news_user in user.followed:
+            user.followed.remove(news_user)
+        else:
+            return jsonify(errno=RET.PARAMERR, errmsg='为关注的用户无法执行取消关注')
+    db.session.commit()
+    return jsonify(errno=RET.OK, errmsg='ok')
+
+
 @news_blue.route('/comment_like', methods=['POST'])
 @user_login_data
 def set_comment_like():
@@ -156,88 +177,59 @@ def news_collect():
 def news_detail(news_id):
     user = g.user
 
-    # 右侧热门新闻
-    news_list = None
-    try:
-        news_list = News.query.order_by(News.clicks.desc()).limit(constants.CLICK_RANK_MAX_NEWS)
-    except Exception as e:
-        current_app.logger.error(e)
+    # 查询首页右边的热门排行新闻数据
+    news = News.query.order_by(News.clicks.desc()).limit(constants.CLICK_RANK_MAX_NEWS)
 
-    click_news_list = []
+    news_list = []
 
-    for news in news_list if news_list else []:
-        click_news_list.append(news.to_dict())
+    for new_model in news:
+        news_list.append(new_model.to_dict())
 
-    # 新闻详情
-    try:
-        news = News.query.get(news_id)
-    except Exception as e:
-        current_app.logger.error(e)
-        abort(404)
-    # 新闻收藏
-    # 判断用户是否收藏过新闻
-    is_collected = False
+    # 根据新闻id获取到详情页面的数据
+    news_content = News.query.get(news_id)
 
+    # 当前新闻是否被收藏,一般默认情况下,第一次进来默认值肯定是false
+    is_collection = False
+    # 如果user有值,说明用户已经登陆
     if user:
-        if news in user.collection_news:
-            is_collected = True
+        # 判断当前新闻,是否在当前用户的新闻收藏列表里面
+        if news_content in user.collection_news:
+            is_collection = True
 
-    if not news:
-        # 返回数据未找到的页面
-        abort(404)
-
-    news.clicks += 1
-
-    # 新闻评论列表
-    comments = []
-    try:
-        comments = Comment.query.filter(Comment.news_id == news_id).order_by(Comment.create_time.desc()).all()
-    except Exception as e:
-        current_app.lgger.error(e)
-
-    comment_like_ids = []
-
+    # 获取到新闻的评论列表
+    comments = Comment.query.filter(Comment.news_id == news_id).order_by(Comment.create_time.desc()).all()
+    # 所有的点赞数据
+    comment_likes = []
+    # 所有的点赞id
+    comment_likes_ids = []
     if user:
-        try:
-            comment_ids = [comment.id for comment in comments]
-            if len(comment_ids) > 0:
-                # 获取当前新闻的所有评论点赞记录
-                comment_likes = CommentLike.query.filter(CommentLike.comment_id.in_(comment_ids),
-                                                         CommentLike.user_id == g.user.id).all()
+        comment_likes = CommentLike.query.filter(CommentLike.user_id == user.id).all()
+        comment_likes_ids = [comment_like.comment_id for comment_like in comment_likes]
 
-                comment_like_ids = [comment_like.comment_id for comment_like in comment_likes]
-        except Exception as e:
-            current_app.logger.error(e)
+    comments_list = []
 
-    comment_list = []
-
-    for item in comments if comments else []:
-        comment_dict = item.to_dict()
-        comment_dict['is_like'] = False
-
-        if g.user and item.id in comment_like_ids:
+    for comment in comments:
+        comment_dict = comment.to_dict()
+        if comment.id in comment_likes_ids:
             comment_dict['is_like'] = True
-        comment_list.append(comment_dict)
+        comments_list.append(comment_dict)
 
-
-
-    # 当前用户是否关注当前新闻作者
-
+    # 判断用户是否关注
     is_followed = False
 
+    # 当前新闻必须有作者,才能关注, 用户必须登陆,才能关注作者
 
-
-    #     if news.user.followers.filter(User.id == g.user.id).count() > 0:
-    #         is_followed = True
+    if user:
+        # 判断当前新闻的作者是否在我关注的人的列表里面(张三,李四)
+        if news_content.user in user.followed:
+            is_followed = True
 
     data = {
-
         "user_info": user.to_dict() if user else None,
-        "click_news_list": click_news_list,
-        "news": news,
-        "is_collected": is_collected,
-        'comments': comment_list,
-        # 'is_followed': is_followed,
+        "click_news_list": news_list,
+        "news": news_content.to_dict(),
+        "is_collected": is_collection,
+        "comments": comments_list,
+        "is_followed": is_followed
     }
-
     return render_template('news/detail.html', data=data)

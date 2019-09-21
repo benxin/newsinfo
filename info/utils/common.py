@@ -1,6 +1,7 @@
 import functools
 
 from flask import session, g
+
 from info.models import User
 
 
@@ -19,7 +20,6 @@ def user_login_data(func):
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         user_id = session.get("user_id")
-
         user = None
         if user_id:
             user = User.query.get(user_id)

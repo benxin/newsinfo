@@ -8,6 +8,41 @@ from info.utils.response_code import RET
 from . import profile_blue
 
 
+@profile_blue.route('/followed_user',methods=['GET', 'POST'])
+@user_login_data
+def user_follow():
+    user = g.user
+    p = request.args.get('p', 1)
+    try:
+        p = int(p)
+    except Exception as e:
+        current_app.logger.error(e)
+        p = 1
+    follows = []
+    current_page = 1
+    total_page = 1
+    try:
+        paginate = user.followed.paginate(p, constants.USER_FOLLOWED_MAX_COUNT, False)
+        follows = paginate.items
+        current_page = paginate.page
+        total_page = paginate.pages
+    except Exception as e:
+        current_app.logger.error(e)
+
+    user_list = []
+
+    for follow_user in follows:
+        user_list.append(follow_user.to_dict())
+
+    data = {
+        'users': user_list,
+        'total_page': total_page,
+        'current_page': current_page,
+
+    }
+    return render_template('news/user_follow.html', data=data)
+
+
 @profile_blue.route('/news_list')
 @user_login_data
 def news_list():

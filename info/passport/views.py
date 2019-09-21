@@ -1,19 +1,21 @@
-from datetime import datetime
 import re
+from datetime import datetime
 from random import randint
-from flask import request, make_response, jsonify, current_app, session
 
-from info.models import User
-from info.utils.captcha.captcha import captcha
-from info.utils.response_code import RET
-from . import passport_blue
+from flask import request, make_response, jsonify, current_app, session, g, render_template
+
 from config import Config
 from info import constants
 from info import db
+from info.models import User
+from info.utils.captcha.captcha import captcha
+from info.utils.common import user_login_data
+from info.utils.response_code import RET
+from . import passport_blue
 
 
 # 登出
-@passport_blue.route('/logout', methods=['POST','GET'])
+@passport_blue.route('/logout', methods=['POST', 'GET'])
 def logout():
     '''
      清除session中的对应登录之后保存的信息
