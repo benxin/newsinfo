@@ -10,7 +10,7 @@ from manager import app
 def add_test_users():
     users = []
     now = datetime.datetime.now()
-    for num in range(100000, 640000):
+    for num in range(650000, 680000):
         try:
             user = User()
             user.nick_name = "%011d" % num

@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="ccab6c1c-81d1-4a7b-ae01-956784cbcf2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qiniu_pythonsdk_hostscache.json" beforeDir="false" afterPath="$PROJECT_DIR$/.qiniu_pythonsdk_hostscache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/info/admin/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/admin/html/news_review.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/admin/news_review.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info/static/admin/html/news_review_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/admin/news_review_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info/static/admin/html/news_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/admin/news_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info/static/admin/html/news_edit_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/admin/news_edit_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info/static/admin/js/news_edit_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/admin/js/news_edit_detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info/static/admin/js/news_review_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/info/static/admin/js/news_review_detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info/templates/admin/news_review.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/admin/news_review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info/templates/admin/news_review_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/info/templates/admin/news_review_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -263,7 +269,7 @@
       <workItem from="1568795564708" duration="928000" />
       <workItem from="1568797585180" duration="54248000" />
       <workItem from="1568892600738" duration="1002000" />
-      <workItem from="1568894866820" duration="10095000" />
+      <workItem from="1568894866820" duration="34788000" />
     </task>
     <servers />
   </component>
@@ -288,7 +294,7 @@
     <SUITE FILE_PATH="coverage/newsinfo$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1567948092229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/info/index" />
     <SUITE FILE_PATH="coverage/newsinfo$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1567722821965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/info" />
     <SUITE FILE_PATH="coverage/newsinfo$views.coverage" NAME="views Coverage Results" MODIFIED="1567878513621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/info/passport" />
-    <SUITE FILE_PATH="coverage/newsinfo$manager.coverage" NAME="manager Coverage Results" MODIFIED="1568977265105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/newsinfo$manager.coverage" NAME="manager Coverage Results" MODIFIED="1569031744599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/newsinfo$views__2_.coverage" NAME="views (2) Coverage Results" MODIFIED="1568868261407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/info/admin" />
     <SUITE FILE_PATH="coverage/newsinfo$demo.coverage" NAME="demo Coverage Results" MODIFIED="1568797630894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
