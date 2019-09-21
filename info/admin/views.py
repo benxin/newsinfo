@@ -11,6 +11,61 @@ from info.utils.response_code import RET
 from . import admin_blue
 
 
+@admin_blue.route('/add_category', methods=['POST'])
+def add_category():
+    '''修改或者添加分类'''
+    category_id = request.json.get('id')
+    category_name = request.json.get('name')
+
+    if not category_name:
+        return jsonify(errno=RET.PARAMERR, errmsg='缺少参数')
+
+    if category_id:
+
+        try:
+            category = Category.query.get(category_id)
+        except Exception as e:
+            current_app.logger.error(e)
+            return jsonify(errno=RET.DBERR, errmsg='查询数据失败')
+        if not category:
+            return jsonify(errno=RET.NODATA, errmsg='未查询到分类数据')
+
+        category.name = category_name
+
+    else:
+        # 如果没有分类id,则是添加分类
+        category = Category()
+        category.name = category_name
+        db.session.add(category)
+
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg='数据提交失败')
+    return jsonify(errno=RET.OK, errmsg='数据提交成功')
+
+
+@admin_blue.route('/news_type')
+def news_type():
+    categories = Category.query.all()
+    categories_list = []
+
+    for category in categories:
+        #  获取字典
+        cate_dict = category.to_dict()
+        categories_list.append(cate_dict)
+
+    categories_list.pop(0)
+
+    data = {
+        'categories': categories_list
+    }
+
+    return render_template('admin/news_type.html', data=data)
+
+
 @admin_blue.route('/news_edit_detail', methods=['GET', 'POST'])
 def news_edit_detail():
     '''新闻编辑详情'''
@@ -18,7 +73,6 @@ def news_edit_detail():
 
         # 获取参数
         news_id = request.values.get('news_id')
-
 
         if not news_id:
             return render_template('admin/news_edit_detail.html', data={'errmsg': '未查询到新闻数据'})
@@ -48,22 +102,18 @@ def news_edit_detail():
             'categories': categories_li,
 
         }
-        return render_template('admin/news_edit_detail.html',data=data)
+        return render_template('admin/news_edit_detail.html', data=data)
 
     news_id = request.form.get('news_id')
     title = request.form.get('title')
-    digest =  request.form.get('digest')
+    digest = request.form.get('digest')
     content = request.form.get('content')
     index_image = request.files.get('index_image')
     category_id = request.form.get('category_id')
 
-
-
     # 校验数据
-    if not all([content,title,digest,category_id]):
-
-        return jsonify(errno=RET.PARAMERR,errmsg = '缺少参数')
-
+    if not all([content, title, digest, category_id]):
+        return jsonify(errno=RET.PARAMERR, errmsg='缺少参数')
 
     news = None
     try:
@@ -71,7 +121,7 @@ def news_edit_detail():
     except  Exception as e:
         current_app.logger.error(e)
     if not news:
-        return jsonify(errno=RET.NODATA,errmsg='未查询到新闻数据')
+        return jsonify(errno=RET.NODATA, errmsg='未查询到新闻数据')
 
     # 读取图片
 
@@ -80,13 +130,13 @@ def news_edit_detail():
             index_image = index_image.read()
         except Exception as e:
             current_app.logger.error(e)
-            return jsonify(errno=RET.PARAMERR,errmsg='图片读取错误')
+            return jsonify(errno=RET.PARAMERR, errmsg='图片读取错误')
         try:
             key = storage(index_image)
         except Exception as e:
             current_app.logger.error(e)
-            return jsonify(errno=RET.THIRDERR,errmsg='上传图片出错')
-        news.index_image_url =constants.QINIU_DOMIN_PREFIX + key
+            return jsonify(errno=RET.THIRDERR, errmsg='上传图片出错')
+        news.index_image_url = constants.QINIU_DOMIN_PREFIX + key
 
     # 设置相关数据
 
@@ -102,13 +152,9 @@ def news_edit_detail():
     except Exception as e:
         current_app.logger.error(e)
         db.session.rollback()
-        return jsonify(errno= RET.DBERR,errmsg='数据提交失败')
+        return jsonify(errno=RET.DBERR, errmsg='数据提交失败')
     #  返回结果
-    return jsonify(errno=RET.OK,errmsg='编辑成功')
-
-
-
-
+    return jsonify(errno=RET.OK, errmsg='编辑成功')
 
 
 @admin_blue.route('/news_edit')

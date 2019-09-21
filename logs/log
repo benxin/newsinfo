@@ -1479,3 +1479,242 @@
 2019-09-21 11:41:34,052 - INFO - _internal.py - _log - 122 - 10.0.0.2 - - [21/Sep/2019 11:41:34] "GET /static/admin/css/main.css HTTP/1.1" 200 -
 2019-09-21 11:41:34,064 - INFO - _internal.py - _log - 122 - 10.0.0.2 - - [21/Sep/2019 11:41:34] "GET /static/admin/js/echarts.min.js HTTP/1.1" 200 -
 2019-09-21 11:41:34,269 - INFO - _internal.py - _log - 122 - 10.0.0.2 - - [21/Sep/2019 11:41:34] "GET /favicon.ico HTTP/1.1" 200 -
+2019-09-21 15:13:37,075 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:13:37] "GET /admin/user_list HTTP/1.1" 200 -
+2019-09-21 15:13:37,746 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:13:37] "GET /admin/user_list HTTP/1.1" 200 -
+2019-09-21 15:24:41,481 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 15:24:41,615 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 15:24:42,213 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 15:24:42,214 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 15:24:49,294 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 15:24:49,418 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 15:24:49,938 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 15:24:49,939 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 15:24:58,026 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 15:24:58,107 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 15:24:58,613 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 15:24:58,613 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 15:29:25,888 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 15:29:25,992 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 15:29:26,491 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 15:29:26,491 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 15:34:15,979 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 15:34:16,083 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 15:34:16,635 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 15:34:16,636 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 15:34:43,868 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 15:34:43,974 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 15:34:44,524 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 15:34:44,525 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 15:40:12,418 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 15:40:12,744 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 15:40:13,325 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 15:40:13,326 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 15:43:12,943 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 15:43:13,060 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 15:53:23,914 - INFO - _internal.py - _log - 122 -  * Running on https://0.0.0.0:4000/ (Press CTRL+C to quit)
+2019-09-21 15:53:23,915 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 15:53:24,386 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 15:53:24,387 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 15:53:30,299 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:53:30] "GET /admin/index HTTP/1.1" 200 -
+2019-09-21 15:53:40,023 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:53:40] "GET /admin/user_count HTTP/1.1" 200 -
+2019-09-21 15:53:40,065 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:53:40] "GET /admin/news_type HTTP/1.1" 404 -
+2019-09-21 15:53:40,462 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:53:40] "GET /favicon.ico HTTP/1.1" 200 -
+2019-09-21 15:53:47,606 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:53:47] "GET /admin/news_edit HTTP/1.1" 200 -
+2019-09-21 15:53:49,829 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:53:49] "GET /admin/news_type HTTP/1.1" 404 -
+2019-09-21 15:54:25,271 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:54:25] "GET /admin/news_edit HTTP/1.1" 200 -
+2019-09-21 15:54:26,828 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:54:26] "GET /admin/news_type HTTP/1.1" 404 -
+2019-09-21 15:54:41,155 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:54:41] "GET /admin/index HTTP/1.1" 200 -
+2019-09-21 15:54:50,748 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:54:50] "GET /admin/user_count HTTP/1.1" 200 -
+2019-09-21 15:54:50,760 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:54:50] "GET /admin/news_type HTTP/1.1" 404 -
+2019-09-21 15:54:51,225 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:54:51] "GET /favicon.ico HTTP/1.1" 200 -
+2019-09-21 15:55:17,665 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 15:55:17,750 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 15:55:18,232 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 15:55:18,232 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 15:58:24,860 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:58:24] "GET /admin/news_type HTTP/1.1" 404 -
+2019-09-21 15:58:32,218 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:58:32] "GET /admin/news_type HTTP/1.1" 404 -
+2019-09-21 15:58:50,994 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:58:50] "GET /admin/news_edit HTTP/1.1" 200 -
+2019-09-21 15:58:53,341 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:58:53] "GET /admin/index HTTP/1.1" 200 -
+2019-09-21 15:59:02,920 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:59:02] "GET /admin/user_count HTTP/1.1" 200 -
+2019-09-21 15:59:03,268 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:59:03] "GET /favicon.ico HTTP/1.1" 200 -
+2019-09-21 15:59:06,957 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 15:59:06] "GET /admin/news_type HTTP/1.1" 404 -
+2019-09-21 16:02:45,482 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /admin/index HTTP/1.1" 302 -
+2019-09-21 16:02:45,569 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET / HTTP/1.1" 200 -
+2019-09-21 16:02:45,624 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2019-09-21 16:02:45,632 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2019-09-21 16:02:45,653 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2019-09-21 16:02:45,660 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2019-09-21 16:02:45,675 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2019-09-21 16:02:45,695 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2019-09-21 16:02:45,711 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2019-09-21 16:02:45,797 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2019-09-21 16:02:45,804 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2019-09-21 16:02:45,834 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2019-09-21 16:02:45,855 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2019-09-21 16:02:45,898 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:45] "GET /news_list?cid=1&page=1&per_page=10 HTTP/1.1" 200 -
+2019-09-21 16:02:46,563 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:46] "GET /favicon.ico HTTP/1.1" 200 -
+2019-09-21 16:02:57,368 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:57] "GET /admin/login HTTP/1.1" 200 -
+2019-09-21 16:02:57,442 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:57] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+2019-09-21 16:02:57,445 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:57] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+2019-09-21 16:02:57,461 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:57] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+2019-09-21 16:02:57,670 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:57] "GET /static/admin/images/login-bg.jpg HTTP/1.1" 200 -
+2019-09-21 16:02:59,799 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:59] "POST /admin/login HTTP/1.1" 302 -
+2019-09-21 16:02:59,831 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:59] "GET /admin/index HTTP/1.1" 200 -
+2019-09-21 16:02:59,910 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:59] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+2019-09-21 16:02:59,919 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:02:59] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2019-09-21 16:03:07,944 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:03:07] "GET /admin/user_count HTTP/1.1" 200 -
+2019-09-21 16:03:07,983 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:03:07] "GET /admin/news_type HTTP/1.1" 404 -
+2019-09-21 16:03:07,999 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:03:07] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+2019-09-21 16:03:08,135 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:03:08] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2019-09-21 16:03:08,232 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:03:08] "GET /static/news/images/not_found.png HTTP/1.1" 200 -
+2019-09-21 16:14:02,229 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:14:02] "GET /admin/news_type HTTP/1.1" 404 -
+2019-09-21 16:14:03,731 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:14:03] "GET /admin/news_type HTTP/1.1" 404 -
+2019-09-21 16:16:46,764 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 16:16:46,854 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 16:16:47,388 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 16:16:47,388 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 16:17:08,593 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 16:17:08,702 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 16:17:09,389 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 16:17:09,389 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 16:17:51,752 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:17:51] "GET /admin/news_type HTTP/1.1" 500 -
+2019-09-21 16:17:51,790 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:17:51] "GET /admin/news_type?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-09-21 16:17:51,792 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:17:51] "GET /admin/news_type?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-09-21 16:17:51,797 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:17:51] "GET /admin/news_type?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-09-21 16:17:51,942 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:17:51] "GET /admin/news_type?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-09-21 16:17:52,030 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:17:52] "GET /admin/news_type?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-09-21 16:20:40,190 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 16:20:40,296 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 16:20:40,832 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 16:20:40,832 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 16:21:18,266 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:21:18] "GET /admin/news_type HTTP/1.1" 200 -
+2019-09-21 16:21:18,297 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:21:18] "GET /static/admin/js/news_type.js HTTP/1.1" 200 -
+2019-09-21 16:21:40,276 - ERROR - views.py - add_category - 27 - object of type 'NoneType' has no len()
+2019-09-21 16:21:40,277 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:21:40] "POST /admin/add_category HTTP/1.1" 200 -
+2019-09-21 16:31:32,276 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 16:31:32,408 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 16:31:32,861 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 16:31:32,862 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 16:31:33,358 - ERROR - views.py - add_category - 28 - object of type 'NoneType' has no len()
+2019-09-21 16:31:33,360 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:33] "POST /admin/add_category HTTP/1.1" 200 -
+2019-09-21 16:31:33,965 - ERROR - views.py - add_category - 28 - object of type 'NoneType' has no len()
+2019-09-21 16:31:33,967 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:33] "POST /admin/add_category HTTP/1.1" 200 -
+2019-09-21 16:31:39,712 - ERROR - views.py - add_category - 28 - object of type 'NoneType' has no len()
+2019-09-21 16:31:39,713 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:39] "POST /admin/add_category HTTP/1.1" 200 -
+2019-09-21 16:31:49,105 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /admin/index HTTP/1.1" 302 -
+2019-09-21 16:31:49,250 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET / HTTP/1.1" 200 -
+2019-09-21 16:31:49,339 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2019-09-21 16:31:49,357 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2019-09-21 16:31:49,362 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2019-09-21 16:31:49,368 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2019-09-21 16:31:49,382 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2019-09-21 16:31:49,409 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2019-09-21 16:31:49,418 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2019-09-21 16:31:49,532 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2019-09-21 16:31:49,546 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2019-09-21 16:31:49,592 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2019-09-21 16:31:49,606 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2019-09-21 16:31:49,661 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:49] "GET /news_list?cid=1&page=1&per_page=10 HTTP/1.1" 200 -
+2019-09-21 16:31:50,429 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:50] "GET /favicon.ico HTTP/1.1" 200 -
+2019-09-21 16:31:59,313 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:59] "GET /admin/login HTTP/1.1" 200 -
+2019-09-21 16:31:59,405 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:59] "GET /static/admin/css/reset.css HTTP/1.1" 200 -
+2019-09-21 16:31:59,418 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:59] "GET /static/admin/css/main.css HTTP/1.1" 200 -
+2019-09-21 16:31:59,439 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:59] "GET /static/admin/images/logo.png HTTP/1.1" 200 -
+2019-09-21 16:31:59,524 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:31:59] "GET /static/admin/images/login-bg.jpg HTTP/1.1" 200 -
+2019-09-21 16:32:01,641 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:32:01] "POST /admin/login HTTP/1.1" 302 -
+2019-09-21 16:32:01,669 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:32:01] "GET /admin/index HTTP/1.1" 200 -
+2019-09-21 16:32:01,724 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:32:01] "GET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2019-09-21 16:32:01,732 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:32:01] "GET /static/admin/images/person.png HTTP/1.1" 200 -
+2019-09-21 16:32:08,903 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:32:08] "GET /admin/user_count HTTP/1.1" 200 -
+2019-09-21 16:32:08,934 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:32:08] "GET /admin/news_type HTTP/1.1" 200 -
+2019-09-21 16:32:08,943 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:32:08] "GET /static/admin/images/icons.png HTTP/1.1" 200 -
+2019-09-21 16:32:09,031 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:32:09] "GET /static/admin/js/news_type.js HTTP/1.1" 200 -
+2019-09-21 16:32:13,491 - ERROR - views.py - add_category - 28 - object of type 'NoneType' has no len()
+2019-09-21 16:32:13,492 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:32:13] "POST /admin/add_category HTTP/1.1" 200 -
+2019-09-21 16:35:40,935 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 16:35:41,040 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 16:35:41,645 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 16:35:41,645 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 16:37:10,375 - INFO - _internal.py - _log - 122 -  * Detected change in '/home/benxin/PycharmProjects/newsinfo/info/admin/views.py', reloading
+2019-09-21 16:37:10,503 - INFO - _internal.py - _log - 122 -  * Restarting with stat
+2019-09-21 16:37:11,007 - WARNING - _internal.py - _log - 122 -  * Debugger is active!
+2019-09-21 16:37:11,008 - INFO - _internal.py - _log - 122 -  * Debugger PIN: 218-790-755
+2019-09-21 16:37:13,526 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:37:13] "GET /admin/news_type HTTP/1.1" 200 -
+2019-09-21 16:37:25,131 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:37:25] "POST /admin/add_category HTTP/1.1" 200 -
+2019-09-21 16:37:25,148 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:37:25] "GET /admin/news_type HTTP/1.1" 200 -
+2019-09-21 16:37:38,183 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:37:38] "POST /admin/add_category HTTP/1.1" 200 -
+2019-09-21 16:37:38,200 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:37:38] "GET /admin/news_type HTTP/1.1" 200 -
+2019-09-21 16:37:44,845 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:37:44] "POST /admin/add_category HTTP/1.1" 200 -
+2019-09-21 16:37:44,861 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:37:44] "GET /admin/news_type HTTP/1.1" 200 -
+2019-09-21 16:38:02,377 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:02] "POST /admin/add_category HTTP/1.1" 200 -
+2019-09-21 16:38:02,392 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:02] "GET /admin/news_type HTTP/1.1" 200 -
+2019-09-21 16:38:09,125 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:09] "GET /admin/news_type HTTP/1.1" 200 -
+2019-09-21 16:38:10,376 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:10] "GET /admin/news_edit HTTP/1.1" 200 -
+2019-09-21 16:38:10,458 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:10] "GET /static/admin/css/jquery.pagination.css HTTP/1.1" 200 -
+2019-09-21 16:38:10,466 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:10] "GET /static/admin/js/jquery.pagination.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,182 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /admin/news_edit_detail?news_id=1158 HTTP/1.1" 200 -
+2019-09-21 16:38:14,221 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/js/jquery.form.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,230 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/tinymce.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,240 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/js/tinymce_setup.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,264 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/js/news_edit_detail.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,458 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,505 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,512 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/advlist/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,519 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/autolink/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,557 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/link/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,563 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/image/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,568 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/lists/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,575 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/charmap/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,580 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/print/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,587 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/preview/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,592 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/hr/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,597 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/anchor/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,601 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,605 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,610 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,616 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/wordcount/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,621 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,626 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/visualchars/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,632 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/code/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,635 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,637 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,662 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/media/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,668 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,678 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/save/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,696 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/table/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,707 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,721 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/directionality/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,726 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/template/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,739 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/paste/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,756 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/textcolor/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,768 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/codesample/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,779 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/plugin.min.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,854 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/css/style.css HTTP/1.1" 200 -
+2019-09-21 16:38:14,860 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1" 200 -
+2019-09-21 16:38:14,866 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/jquery.iframe-post-form.js HTTP/1.1" 200 -
+2019-09-21 16:38:14,882 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/plugins/imageupload/img/icon.png HTTP/1.1" 200 -
+2019-09-21 16:38:14,954 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1" 200 -
+2019-09-21 16:38:14,998 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:14] "GET /static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1" 200 -
+2019-09-21 16:38:15,018 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:15] "GET /static/admin/tinymce/js/tinymce/plugins/codesample/css/prism.css HTTP/1.1" 200 -
+2019-09-21 16:38:19,663 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:19] "POST /admin/news_edit_detail HTTP/1.1" 200 -
+2019-09-21 16:38:19,706 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:19] "GET /admin/news_edit HTTP/1.1" 200 -
+2019-09-21 16:38:30,328 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:30] "GET / HTTP/1.1" 200 -
+2019-09-21 16:38:30,464 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:30] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2019-09-21 16:38:30,782 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:30] "GET /news_list?cid=1&page=1&per_page=10 HTTP/1.1" 200 -
+2019-09-21 16:38:36,311 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:36] "GET / HTTP/1.1" 200 -
+2019-09-21 16:38:36,529 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:36] "GET /news_list?cid=1&page=1&per_page=10 HTTP/1.1" 200 -
+2019-09-21 16:38:36,650 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:36] "GET /favicon.ico HTTP/1.1" 200 -
+2019-09-21 16:38:42,841 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:42] "GET /news_list?cid=2&page=1&per_page=10 HTTP/1.1" 200 -
+2019-09-21 16:38:43,728 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:43] "GET /news_list?cid=3&page=1&per_page=10 HTTP/1.1" 200 -
+2019-09-21 16:38:44,429 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:44] "GET /news_list?cid=4&page=1&per_page=10 HTTP/1.1" 200 -
+2019-09-21 16:38:45,113 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:45] "GET /news_list?cid=5&page=1&per_page=10 HTTP/1.1" 200 -
+2019-09-21 16:38:45,668 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:45] "GET /news_list?cid=6&page=1&per_page=10 HTTP/1.1" 200 -
+2019-09-21 16:38:46,301 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:46] "GET /news_list?cid=7&page=1&per_page=10 HTTP/1.1" 200 -
+2019-09-21 16:38:47,854 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:47] "GET /news_list?cid=8&page=1&per_page=10 HTTP/1.1" 200 -
+2019-09-21 16:38:49,295 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:49] "GET /news/1158 HTTP/1.1" 200 -
+2019-09-21 16:38:49,355 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:49] "GET /static/news/js/detail.js HTTP/1.1" 200 -
+2019-09-21 16:38:49,486 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:49] "GET /static/news/images/comment_icon.png HTTP/1.1" 200 -
+2019-09-21 16:38:49,500 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:49] "GET /static/news/images/collect_icons.png HTTP/1.1" 200 -
+2019-09-21 16:38:49,525 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:49] "GET /static/news/images/zan_icon.png HTTP/1.1" 200 -
+2019-09-21 16:38:49,538 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:49] "GET /static/news/images/reply_icon.png HTTP/1.1" 200 -
+2019-09-21 16:38:56,354 - INFO - _internal.py - _log - 122 - 127.0.0.1 - - [21/Sep/2019 16:38:56] "GET /news/1158 HTTP/1.1" 200 -
