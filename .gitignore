@@ -111,8 +111,9 @@ env.bak/
 venv.bak/
 utils/key.pem
 utils/cert.pem
-
-
+.cert.pem
+.key.pem
+.demo.py
 # Spyder project settings
 .spyderproject
 .spyproject
